@@ -10,7 +10,7 @@
     {
         "id": 2,
         "name": "AIDS",
-        "symptom": "Fever, Headache,Muscle aches and joint pain, Rash, Sore throat and painful mouth sores, wollen lymph glands, mainly on the neck,  Diarrhe, Weight loss, Cough, Night sweats.",
+        "symptom": "Fever, Headache, Muscle aches and joint pain, Rash, Sore throat and painful mouth sores, wollen lymph glands, mainly on the neck,  Diarrhe, Weight loss, Cough, Night sweats.",
         "precuation": "When you have open or healing wounds, or skin infections.When in contact with blood or body fluids, secretions, excretions or non-intact skin. When in contact with surfaces or articles contaminated with blood or body fluids.When carrying out cleaning or decontamination procedures.",
         "description":"HIV (human immunodeficiency virus) is a virus that attacks the body’s immune system. If HIV is not treated, it can lead to AIDS (acquired immunodeficiency syndrome).",
         "Medicine_Name": "Nucleoside reverse transcriptase inhibitors (NRTIs) , Non-nucleoside reverse transcriptase inhibitors (NNRTIs), Integrase inhibitors, Protease inhibitors (PIs)."
