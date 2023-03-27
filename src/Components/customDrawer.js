@@ -33,14 +33,7 @@ const CustomDrawer = () => {
         <TouchableOpacity onPress={()=>navigation.navigate('Dictionary')}>
             <Text style = {styles.drawerItem}>Dictionary</Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={()=>{
-            if(netInfo){
-            navigation.navigate('login');
-            }
-            else{
-            Alert.alert("No Internet Connection!!", "Internet Connection is required...");
-            }
-            }}>
+        <TouchableOpacity onPress={()=> navigation.navigate('login')}>
             <Text style = {styles.drawerItem}>Save Report</Text>
         </TouchableOpacity>
         <Text style = {styles.Support}>Support Us</Text>

@@ -7,13 +7,16 @@ import translate from 'translate-google-api';
 import Tts from 'react-native-tts'
 import Icon from 'react-native-vector-icons/FontAwesome';
 import NetInfo from '@react-native-community/netinfo'
-import { GetImage } from '../../Components/GetSpecificImage';
-const Data = require('../../Components/SymptomsList.json');
+import { GetImage } from '../Components/getSpecificImage';
+const Data = require('../Assets/Files/SymptomsList.json');
+const Questions = require('../Assets/Files/disease.json')
 
 const Predict = ({}) => {
     const route = useRoute();
     const navigation = useNavigation();
-  const [netInfo, setNetInfo] = useState(false);
+    const [isConfirmed, setIsConfirmed] = useState(false);
+    const [precision, setPrecesion] = useState(0);
+    const [netInfo, setNetInfo] = useState(false);
     const symptom1 = route.params.symtom1;
     const symptom2 = route.params.symtom2;
     const symptom3 = route.params.symtom3;
@@ -150,6 +153,7 @@ const Predict = ({}) => {
     <View style = {styles.container}>
       {!flag ? (< ActivityIndicator size='large' color="green" style = {styles.indicator}/>):(
       <View>
+        { isConfirmed ? <>
         <Text style = {styles.result}>Disease Name : {result.disease}</Text>
         <Text style = {styles.confidence}>Confidence : {result.accuracy*100} % Accuracy</Text>
         <FlatList 
@@ -159,6 +163,15 @@ const Predict = ({}) => {
           renderItem = {DictionaryData}
           keyExtractor = {item=> item.id}
         />
+        </> : <>
+        {Questions.map((ele)=>{
+          console.log(result.disease);
+          if(ele.name === result.disease){
+            Alert.alert("Questions:", ele.question1);
+          }
+        })}
+        </>
+      }
       </View>)
       }
       

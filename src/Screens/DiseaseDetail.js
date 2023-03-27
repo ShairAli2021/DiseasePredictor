@@ -5,11 +5,11 @@ import {useNavigation, useRoute} from '@react-navigation/native';
 import {HeaderBackButton} from 'react-navigation-stack'
 import translate from 'translate-google-api';
 import Tts from 'react-native-tts'
-import Footer from '../../Components/Footer';
-import {GetImage} from '../../Components/GetSpecificImage'
+import {Footer} from '../Components';
+import {GetImage} from '../Components/getSpecificImage'
 import NetInfo from '@react-native-community/netinfo'
 
-const Data = require('../../Components/SymptomsList.json');
+const Data = require('../Assets/Files/SymptomsList.json');
 
 const DiseaseDetail = () => {
   const route = useRoute();
@@ -89,6 +89,7 @@ const DiseaseDetail = () => {
             <Text style={[styles.descriptionStyle, styles.commonStyle]}>
               {item.Medicine_Name}
             </Text>
+            {console.log(item.name)}
             <Image style={styles.imgStyle} source={GetImage(item.name)} />
           </View>
           <View>

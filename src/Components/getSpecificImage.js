@@ -34,7 +34,7 @@ const getImages = {
     'Hypoglycemia':require('../Assets/Images/Disease/Hypoglycemia.jpg'),
     'Osteoarthristis':require('../Assets/Images/Disease/Osteoarthristis.jpg'),
     'Arthritis':require('../Assets/Images/Disease/Arthritis.jpg'),
-    '(vertigo) Paroymsal  Positional Vertigo':require('../Assets/Images/Disease/Vertigo.jpg'),
+    'Paroymsal  Positional Vertigo (Vertigo) ':require('../Assets/Images/Disease/Vertigo.jpg'),
     'Acne':require('../Assets/Images/Disease/Acne.jpg'),
     'Urinary tract infection':require('../Assets/Images/Disease/Allergy.jpg'),
     'Psoriasis':require('../Assets/Images/Disease/Psoriasis.jpg'),

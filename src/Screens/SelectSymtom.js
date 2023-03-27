@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Alert, Image } from 'react-native'
-import Symtoms from '../../Components/Symtoms'
+import {Symtoms} from '../Components'
 import NetInfo from '@react-native-community/netinfo'
 const SelectSymtom = ({navigation}) => {
   const [netInfo, setNetInfo] = useState(false);
@@ -60,7 +60,7 @@ useEffect(()=>{
       <Text style = {styles.buttonTextStyle}>Check</Text>
       </TouchableOpacity>
       <Image 
-      source={require('../../Assets/Images/symptom.png')}
+      source={require('../Assets/Images/symptom.png')}
       style={styles.imgStyle}/>
     </View>
   )

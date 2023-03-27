@@ -1,0 +1,356 @@
+
+
+[
+    {  
+        "id":1,
+        "Doctor":"Dermatologist",
+        "name": "Acne",
+        "question1":"did your problem face  with acne begin more than two month?",
+        "question2":"Do you have blackheads, whiteheads, pustules, or cysts?",
+        "question3":"What products do you use? Do any of them help?",
+        "question4":"Have you been developing extra body or facial hair?",
+        "test":"Blood tests (liver function tests, cholesterol, or if you are female, perhaps a pregnancy test if you are taking the medicine Accutane)",
+          "url":"logo192.png"
+    },{
+        "id":"2",
+        "name": "AIDS",
+
+        "Doctor":"infectious-diseases-specialist",
+        "question1":"Do you feel fever,fatigue,lazzinenes?",
+        "question2":"Do you feel guilty in your neck region?",
+        "question3":"Have you ever done STD-test ",
+        "question4":"Are you married?",
+       
+        "test":"PCR-test, HIV-test"
+    },
+    {
+        "id":3,
+        "name": "Alcoholic hepatitis",
+        "Doctor":"Gastroenterologist (Transplant Hepatologist)",
+        
+        
+        "question1":"Do you feel fever, fatigue, weekness?",
+        "question2":"Do you feel abdominal terderness?",
+        "question3":"Do you drink alcohol?",
+        "question4":"Do you take a lot of alcohol?",
+        "test":"Liver function tests,An ultrasound, CT or MRI scan of the liver, Blood tests"
+    },
+    {
+            
+        "id": 4,
+            "name": "Allergy",
+            "Doctor":"allergist and dermatologist",
+          
+            "question1":"Are your sneezing and runny nose the result of a common cold or a sign of allergies?",
+            "questions2":"Are you tired and irritable? Your fatigue could be a sign of untreated allergies",
+            "question3":"Have you rashes on your skin?",
+            "question4":"You snore or have trouble staying asleep.",
+            "test":"Prostate Exam,Cervical Cancer Screening,Skin Check"
+        
+    },
+    
+    {
+            
+        "id": 5,
+             "name": "Arthritis",
+            "Doctor":"Orthopedic",
+          
+            "question1":"Do you feel pain or stifness in your joints?",
+            "question2":"Are you more than 40 years old?",
+            "question3":"Do you feel uncomfortable standing after sitting a few moments at one place?",
+            "question4":"Do you feel fatigu, lazinziness?",
+            "test":"Hematocrit (HCT) and hemoglobin (Hgb) counts, White blood cell count (WBC),Erythrocyte sedimentation rate (ESR)"
+        
+    },
+    {
+            
+        "id": 6,
+        "name": "Bronchial Asthma",
+            "Doctor":"Orthopedic",
+          
+            "question1":"Frequent cough, especially at night?",
+            "question2":"eeling very tired or weak when exercising?",
+            "question3":"Do you feel Chest tightness, pain, or pressure?",
+            "question4":"Do you feel Trouble sleeping?",
+            "test":"X-ray or computerized tomography (CT) imaging of your ches,CT scans of your sinuses, Blood tests"
+        
+    },
+    {
+         
+             "id": 7,
+            "name": "Cervical spondylosis",
+           "Doctor":"Neurosurgeon",
+          
+            "question1":"Do you feel a stiff neck? ",
+            "question2":"Do you feel headaches that mostly occur in the back of the head?",
+            "question3":"Do you feel tingling or numbness that mainly affects the shoulders and arms, although it can also occur in the legs?",
+            "question4":"Do you feel tilting your neck backward?",
+            "test":"Flexion compression tes, Jackson compression test, Percussion test"
+
+    },
+      {
+         
+             "id": 8,
+            "name": "Chicken pox",
+           "Doctor":" General Medicine",
+          
+            "question1":"Do you feel Raised pink or red bumps (papules), which break out over several days?",
+            "question2":"Do you feel Crusts and scabs ",
+            "question3":"Do you feel hhe rash spreads to one or both eyes?",
+            "question4":"Anyone in the household has a problem with his or her immune system or is younger than 6 months?",
+            "test":"(VZV) testing:,  CDC test, "
+
+    },
+      {
+         
+             "id": 9,
+            "name": "Chronic cholestasis",
+           "Doctor":"Gastroenterology",
+          
+            "question1":"Do you have The yellowing of your skin and the white of your eyes?",
+            "question2":"do you feel pain in your abdomen",
+            "question3":"Do you feel excessive itching?",
+            "question4":"dark urine",
+            "test":"Tests for Liver Injury, Tests for Cholestasis,Liver Biopsy, Imaging Tests of the Liver and Gallbladder"
+
+    },
+      {
+         
+             "id": 10,
+            "name": " common clod",
+           "Doctor":"Neurology",
+          
+            "question1":" Have you a Runny nose",
+            "question2":"do you feel a Stuffy nose?",
+            "question3":"Do you feel Trouble breathing or fast breathing?",
+            "question4":"Do you feel Watery eyes?",
+            "test":"Rapid influenza antigen tests, Molecular flu tests"
+
+    },
+      {
+         
+             "id": 11,
+            "name": "Dengue",
+           "Doctor":"General Physician, Sexologist, Gastroenterologist",
+          
+            "question1":"You have Nausea, vomiting? ",
+            "question2":"Do you feel Aches and pains (eye pain, typically behind the eyes, muscle, joint, or bone pain)",
+            "question3":"You have Bleeding from the nose or gums?",
+            "question4":"Do you feel any warning sign?",
+            "test":"Acetaminophen Level, Acid-Fast Bacillus (AFB) Tests, Adrenocorticotropic Hormone (ACTH), Albumin Blood Test"
+
+    },
+      {
+         
+             "id": 12,
+            "name": "Diabetes",
+           "Doctor":"Endocrinologist",
+          
+            "question1":"You have a Urinating often?",
+            "question2":"Feeling very thirsty",
+            "question3":"Getting a lot of infections, such as gum, skin and vaginal infections",
+            "question4":"Your blood preature is high?",
+            "test":"A1C Test ,Fasting Blood Sugar Test , Glucose Tolerance Test"
+
+    },
+      {
+         
+             "id": 13,
+            "name": "Dimorphic hemmorhoids(piles)",
+           "Doctor":"Colon and Rectal Surgeon",
+          
+            "question1":" You have overweight?",
+            "question2":"Pain or ache in your anus, especially when you sit.",
+            "question3":"Are pregnant",
+            "question4":"Itchy anus",
+            "test":"Neck X-ray,MRI. CT myelography"
+
+    },
+      {
+         
+             "id": 14,
+            "name": "Drug Reaction",
+           "Doctor":"",
+          
+            "question1":"What drug do you suspect caused your reaction?",
+            "question2":"When did you start taking it, and have you stopped taking it?",
+            "question3":"How long did your symptoms last, and what did you do to relieve them?",
+            "question4":"Do you consume herbal medications or take vitamin or mineral supplements? If so, which ones?",
+            "test":"Skin tests, blood test,"
+
+    },
+      {
+         
+             "id": 7,
+            "name": "Fungal infection",
+           "Doctor":"Dermatologist, Cosmetologist, Dermatosurgeon, Aesthetic Dermatologist",
+          
+            "question1":"redness and soreness on and surrounding the vagina",
+            "question2":"unusual vaginal discharge, such as gray clumps that resemble cottage cheese or a very watery discharge",
+            "question3":"itching and swelling around the vagina",
+            "question4":"burning sensations or pain during urination or intercourse",
+            "test":"swab test, blood test, urine test"
+            
+
+    },
+      {
+         
+             "id": 16,
+            "name": "Gastroenteritis",
+           "Doctor":"Orthopedic",
+          
+            "question1":"You have a fever above 104 F (40 C)",
+            "question2":"You're not able to keep liquids down for 24 hours",
+            "question3":"You're vomiting blood",
+            "question4":"You've been vomiting or having diarrhea for more than two days",
+            "test":""
+
+    },
+      {
+         
+             "id": 17,
+            "name": "GERD",
+           "Doctor":"Gastroenterologist",
+          
+            "question1":"Chest pain (severe chest pain could be something more serious than GERD and requires immediate medical help)",
+            "question2":"Trouble swallowing or feeling like there’s a lump in the throat",
+            "question3":"Dry cough or throat clearing repeatedly",
+            "question4":"Eating large meals or overeating",
+            "test":""
+
+    },
+      {
+         
+             "id":18,
+            "name": "Heartattack",
+           "Doctor":"",
+          
+            "question1":"Chest pain that may feel like pressure, tightness, pain, squeezing or aching",
+            "question2":"Do you feel Lightheadedness or sudden dizziness?",
+            "question3":"",
+            "question4":""
+
+    },
+      {
+         
+             "id": 19,
+            "name": "Hepatitis A",
+           "Doctor":"Orthopedic",
+          
+            "question1":"",
+            "question2":"",
+            "question3":"",
+            "question4":""
+
+    },
+    
+      {
+         
+             "id": 20,
+            "name": "Hepatitis B",
+           "Doctor":"Orthopedic",
+          
+            "question1":"",
+            "question2":"",
+            "question3":"",
+            "question4":""
+
+    },
+      {
+         
+             "id": 21,
+            "name": "Hepatitis C",
+           "Doctor":"Orthopedic",
+          
+            "question1":"",
+            "question2":"",
+            "question3":"",
+            "question4":""
+
+    },
+      {
+         
+             "id":22,
+            "name": "Hepatitis D",
+           "Doctor":"Orthopedic",
+          
+            "question1":"",
+            "question2":"",
+            "question3":"",
+            "question4":""
+
+    },
+      {
+         
+             "id": 23,
+            "name": "Hepatitis E",
+           "Doctor":"Orthopedic",
+          
+            "question1":"",
+            "question2":"",
+            "question3":"",
+            "question4":""
+
+    },
+      {
+         
+             "id": 24,
+            "name": "Cervical spondylosis",
+           "Doctor":"Orthopedic",
+          
+            "question1":"",
+            "question2":"",
+            "question3":"",
+            "question4":""
+
+    },
+      {
+         
+             "id": 7,
+            "name": "Cervical spondylosis",
+           "Doctor":"Orthopedic",
+          
+            "question1":"",
+            "question2":"",
+            "question3":"",
+            "question4":""
+
+    },
+      {
+         
+             "id": 7,
+            "name": "Cervical spondylosis",
+           "Doctor":"Orthopedic",
+          
+            "question1":"",
+            "question2":"",
+            "question3":"",
+            "question4":""
+
+    },
+      {
+         
+             "id": 7,
+            "name": "Cervical spondylosis",
+           "Doctor":"Orthopedic",
+          
+            "question1":"",
+            "question2":"",
+            "question3":"",
+            "question4":""
+
+    },
+      {
+         
+             "id": 7,
+            "name": "Cervical spondylosis",
+           "Doctor":"Orthopedic",
+          
+            "question1":"",
+            "question2":"",
+            "question3":"",
+            "question4":""
+
+    }
+
+]

@@ -7,7 +7,7 @@ const Home = ({navigation}) => {
       <Text style={styles.welcomeTextStyle}>
         Disease Predictor
       </Text>
-      <Image source={require('../../Assets/Images/original.png')}
+      <Image source={require('../Assets/Images/original.png')}
       style={styles.imgStyle}/>
       <TouchableOpacity 
       style={styles.buttonStyle}

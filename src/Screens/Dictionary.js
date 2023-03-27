@@ -1,7 +1,7 @@
 import { FlatList, Text, StyleSheet, TouchableOpacity, View, TextInput,} from 'react-native'
 import React, { useEffect, useState } from 'react'
 import Icon  from 'react-native-vector-icons/FontAwesome'
-const Data = require('../../Components/SymptomsList.json')
+const Data = require('../Assets/Files/SymptomsList.json')
 
 const Dictionary = ({navigation}) => {
     const [search, setSearch] = useState('');
