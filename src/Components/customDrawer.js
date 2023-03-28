@@ -33,6 +33,17 @@ const CustomDrawer = () => {
         <TouchableOpacity onPress={()=>navigation.navigate('Dictionary')}>
             <Text style = {styles.drawerItem}>Dictionary</Text>
         </TouchableOpacity>
+
+
+
+        <TouchableOpacity onPress={()=>navigation.navigate('Graph')}>
+            <Text style = {styles.drawerItem}>Graph</Text>
+        </TouchableOpacity>
+
+
+
+
+
         <TouchableOpacity onPress={()=> navigation.navigate('login')}>
             <Text style = {styles.drawerItem}>Save Report</Text>
         </TouchableOpacity>

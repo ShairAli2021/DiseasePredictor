@@ -1,128 +1,82 @@
-import {
-  Alert,
-  Keyboard,
-  StyleSheet,
-  Text,
-  TextInput,
-  ToastAndroid,
-  TouchableOpacity,
-  View,
-} from 'react-native';
-import React, {useState} from 'react';
+
+import React, { useState } from 'react';
+import { View, Text, TextInput, TouchableOpacity } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 const Register = () => {
-  const [username, setUsername] = useState('');
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [newPassword, setNewPassword] = useState('');
-  const Save = () => {
-    try {
-      database()
-        .ref('users/')
-        .once('value', snapshot => {
-          const responselist = snapshot.val();
-          for (const user of Object.values(responselist)) {
-            if (username === user.name) {
-              flag = true;
-            }
-          }
-          if (flag) {
-            setError('Username Not Avalaible!');
-          } else {
-            database().ref('users/').push().set({
-              name: username,
-              password: password,
-            });
-            Alert.alert('Success', 'Registered Successfully!');
-          }
-        });
-    } catch (empty) {
-      Alert.alert('Empty', 'No user regestered! ');
-    }
-  };
+  const [confirmPassword, setConfirmPassword] = useState('');
 
   return (
-    <View>
+    <View style={styles.container}>
+      <Text style={styles.title}>Registration Form</Text>
       <TextInput
-        style={styles.inputField}
-        placeholder="Unique Email : "
+        style={styles.input}
+        placeholder="Name"
+        value={name}
+        onChangeText={(text) => setName(text)}
+      />
+      <TextInput
+        style={styles.input}
+        placeholder="Email"
         value={email}
-        autoComplete="off"
-        onChangeText={newValue => setUsername(newValue.trim())}
+        onChangeText={(text) => setEmail(text)}
       />
       <TextInput
-        style={styles.inputField}
-        placeholder="Unique Username : "
-        value={username}
-        autoComplete="off"
-        onChangeText={newValue => setEmail(newValue.trim())}
-      />
-      <TextInput
-        style={styles.inputField}
-        placeholder="Try Complex Password : "
+        style={styles.input}
+        placeholder="Password"
+        secureTextEntry={true}
         value={password}
-        autoComplete="off"
-        onChangeText={newValue => setPassword(newValue.trim())}
+        onChangeText={(text) => setPassword(text)}
       />
       <TextInput
-        style={styles.inputField}
-        placeholder="Confirm Your Password : "
-        value={newPassword}
-        autoComplete="off"
-        onChangeText={newValue => setNewPassword(newValue.trim())}
+        style={styles.input}
+        placeholder="Confirm Password"
+        secureTextEntry={true}
+        value={confirmPassword}
+        onChangeText={(text) => setConfirmPassword(text)}
       />
-
-      <TouchableOpacity
-        style={styles.btn}
-        onPress={() => {
-          if (netInfo) {
-            if (username.length < 4) {
-              setError('Username length must be greater then 4');
-            } else {
-              if (password.length < 5) {
-                setError('Password length must be greater then 4');
-              } else {
-                setError('');
-                ToastAndroid.show('Please wait...', ToastAndroid.LONG);
-                Save();
-              }
-            }
-          } else {
-            ToastAndroid.show(
-              'No Internet, Check Your Internet Connection!!!',
-              ToastAndroid.LONG,
-            );
-          }
-        }}>
-        <Text style={styles.btnText}>Register</Text>
+      <TouchableOpacity style={styles.button}>
+        <Text style={styles.buttonText}>Register</Text>
       </TouchableOpacity>
     </View>
   );
 };
-
-export default Register;
-
 const styles = StyleSheet.create({
-  inputField: {
-    alignSelf: 'center',
-    fontSize: 18,
-    borderWidth: 1,
-    borderColor: 'green',
-    borderRadius: 10,
-    textAlign: 'center',
-    margin: 10,
-    width: 260,
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    // justifyContent: 'center',
+    backgroundColor: '#fff',
+    marginTop:5
   },
-    btn: {
-        alignSelf: 'center',
-        alignItems: 'center',
-        width: 100,
-        borderRadius: 10,
-        margin: 10,
-        paddingVertical: 10,
-        backgroundColor: 'green',
-      },
-      btnText: {
-        fontSize: 20,
-      },
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 20,
+  },
+  input: {
+    borderWidth: 1,
+    borderColor: '#777',
+    padding: 8,
+    margin: 10,
+    width: 300,
+    borderRadius: 5,
+  },
+  button: {
+    backgroundColor: 'gray',
+    padding: 10,
+    borderRadius: 5,
+  },
+  buttonText: {
+    color: '#fff',
+    fontWeight: 'bold',
+    fontSize: 16,
+  },
 });
+
+export default Register
+
+

@@ -6,6 +6,8 @@ import {
   createDrawerNavigator,
   DrawerContentScrollView,
 } from '@react-navigation/drawer';
+
+import Graph from '../Screens/Graph';
 import {
   Home,
   Predict,
@@ -13,6 +15,7 @@ import {
   DiseaseDetail,
   Save_Report,
   About,
+  
   ShowReport,
   SelectSymtom,
   Login,
@@ -50,6 +53,7 @@ const Nagivation = () => {
         <Stack.Screen name="login" component={Login} />
         <Stack.Screen name="register" component={Register} />
         <Stack.Screen name="save report" component={Save_Report} />
+        <Stack.Screen name="Graph" component={Graph} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -132,7 +132,10 @@ export default Login;
 
 const styles = StyleSheet.create({
   container: {
-    alignSelf: 'center',
+    flex: 1,
+    alignItems: 'center',
+    // justifyContent: 'center',
+    backgroundColor: '#fff',
   },
   NoteText: {
     fontSize: 16,
@@ -145,23 +148,18 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   inputField: {
-    alignSelf: 'center',
-    fontSize: 18,
     borderWidth: 1,
-    borderColor: 'green',
-    borderRadius: 10,
-    textAlign: 'center',
+    borderColor: '#777',
+    padding: 8,
     margin: 10,
-    width: 260,
+    width: 300,
+    borderRadius: 5,
   },
   btn: {
-    alignSelf: 'center',
-    alignItems: 'center',
-    width: 100,
-    borderRadius: 10,
-    margin: 10,
-    paddingVertical: 10,
-    backgroundColor: 'green',
+    backgroundColor: 'gray',
+    padding: 10,
+    
+    borderRadius: 5,
   },
   btnText: {
     fontSize: 20,

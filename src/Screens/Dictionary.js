@@ -1,14 +1,16 @@
-import { FlatList, Text, StyleSheet, TouchableOpacity, View, TextInput,} from 'react-native'
+import { FlatList, Text, StyleSheet, TouchableOpacity, View, TextInput,Modal,  TouchableHighlight} from 'react-native'
 import React, { useEffect, useState } from 'react'
 import Icon  from 'react-native-vector-icons/FontAwesome'
 const Data = require('../Assets/Files/SymptomsList.json')
 
 const Dictionary = ({navigation}) => {
+    const [modalVisible, setModalVisible] = useState(false);
     const [search, setSearch] = useState('');
     const [iconName, setIconName] = useState('');
 const DictionaryData = ({item})=>{
     if(search == ''){
     return(
+        <TouchableHighlight onPress={() => setModalVisible(true)}>
         <TouchableOpacity
             key={item.id}
             onPress={()=>{
@@ -19,6 +21,7 @@ const DictionaryData = ({item})=>{
             {item.name}
             </Text>
         </TouchableOpacity>
+        </TouchableHighlight>
     )
     }
     else{
@@ -80,7 +83,7 @@ const styles = StyleSheet.create({
         paddingVertical:10, 
         paddingLeft: 20,
         width:'100%', 
-        backgroundColor:'#fcfcfc'
+        backgroundColor:'#ffffff'
     },
     searchBarStyle:{
         flexDirection: 'row',

@@ -69,7 +69,7 @@ const DiseaseDetail = () => {
             <Text style={styles.nameStyle}>{item.name + ':'}</Text>
             <View style={{flexDirection: 'row',}}>
               <Text style={styles.HeadingStyle}>Symptoms:</Text>
-              <Icon style={styles.micro} name='microphone' size={30} color='black'
+              <Icon style={styles.micro} name='volume-up' size={30} color='black'
               onPress={()=>{
                 SpeechText(item);
               }}/>
@@ -144,13 +144,15 @@ const styles = StyleSheet.create({
     marginLeft: 10,
   },
   imgStyle: {
-    width: 300,
+    width:"auto",
     height: 250,
     marginTop: 5,
     marginLeft: 20,
     borderWidth: 1,
     borderColor: 'green',
     borderRadius: 20,
+    
+    
   },
 });
 export default DiseaseDetail;
