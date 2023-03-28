@@ -57,6 +57,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 20,
   },
+  // dfsdfsdf
   input: {
     borderWidth: 1,
     borderColor: '#777',
