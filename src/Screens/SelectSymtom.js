@@ -42,8 +42,9 @@ useEffect(()=>{
       <Text style={styles.noteTextStyle}>Note:</Text>
       <Text style={styles.noteMessageStyle}>Please try to select Symptoms intelligently. Predicted result is 100% based on your selected Symptoms</Text>
     <TouchableOpacity
-    style = {styles.buttonStyle}
+    style = {styles.buttonStyle }
       onPress={()=>{
+        
         if(symtom1 !== undefined && symtom2 !== undefined && symtom3 !== undefined && symtom4 !== undefined && symtom5 !== undefined ){
           if(netInfo){
             navigation.navigate('Predict', {symtom1: `${symtom1}`, symtom2: `${symtom2}`, symtom3: `${symtom3}`, symtom4: `${symtom4}`, symtom5: `${symtom5}`});
@@ -76,7 +77,7 @@ const styles = StyleSheet.create({
     opacity:0.5,
   },
   buttonStyle:{
-    backgroundColor :'green',
+    backgroundColor :'gray',
     borderRadius: 10,
     padding: 8,
     marginHorizontal: 110,
@@ -92,7 +93,10 @@ const styles = StyleSheet.create({
   noteTextStyle:{
     marginTop: 5,
     fontWeight:'bold',
-    fontSize: 16,
+    fontSize: 20,
+    width:50,
+    borderRadius:15,
+    backgroundColor:"red"
   },
   noteMessageStyle:{
     justifyContent: 'center',
@@ -103,7 +107,7 @@ const styles = StyleSheet.create({
     width: '95%', 
     height: 200, 
     borderWidth: 1,
-    borderColor: 'green',
+    borderColor: 'gray',
     borderRadius: 20
   },
 })
