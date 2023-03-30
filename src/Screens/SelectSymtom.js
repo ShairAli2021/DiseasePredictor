@@ -44,6 +44,7 @@ useEffect(()=>{
     <TouchableOpacity
     style = {styles.buttonStyle }
       onPress={()=>{
+      //comm
         
         if(symtom1 !== undefined && symtom2 !== undefined && symtom3 !== undefined && symtom4 !== undefined && symtom5 !== undefined ){
           if(netInfo){

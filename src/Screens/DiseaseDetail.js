@@ -1,4 +1,4 @@
-import {Text, FlatList, StyleSheet, Image, View, Alert, ToastAndroid, BackHandler} from 'react-native';
+import {Text, FlatList, StyleSheet, Image, View, Alert, ToastAndroid, BackHandler, ActivityIndicator} from 'react-native';
 import React, {useState, useEffect} from 'react';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {useNavigation, useRoute} from '@react-navigation/native';
@@ -9,9 +9,13 @@ import {Footer} from '../Components';
 import {GetImage} from '../Components/getSpecificImage'
 import NetInfo from '@react-native-community/netinfo'
 
+
+
 const Data = require('../Assets/Files/SymptomsList.json');
 
 const DiseaseDetail = () => {
+
+
   const route = useRoute();
   const navigation = useNavigation();
   const [netInfo, setNetInfo] = useState(false);
@@ -36,8 +40,15 @@ const DiseaseDetail = () => {
     }});
 
   Tts.setDefaultLanguage('ur');
+  
 
   const SpeechText = (item)=>{
+   
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+        <ActivityIndicator size="large" color="#0000ff" />
+      </View>
+  
+    
     if(netInfo){
       ToastAndroid.show("Translating Please have Patience...", ToastAndroid.LONG);
     try{
@@ -53,7 +64,11 @@ const DiseaseDetail = () => {
       Tts.speak(JSON.stringify(res));
       //Tts.stop();
     });
+  
+
   }catch(e){
+  
+
     Alert.alert("Error", "No internet");
   }
 }else{
@@ -69,10 +84,13 @@ const DiseaseDetail = () => {
             <Text style={styles.nameStyle}>{item.name + ':'}</Text>
             <View style={{flexDirection: 'row',}}>
               <Text style={styles.HeadingStyle}>Symptoms:</Text>
+              <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center'  }}>
+        <ActivityIndicator size="large" color="green" />
+      </View>
               <Icon style={styles.micro} name='volume-up' size={30} color='black'
               onPress={()=>{
                 SpeechText(item);
-              }}/>
+              }}   />
             </View>
             <Text style={[styles.symptomStyle, styles.commonStyle]}>
               {item.symptom}

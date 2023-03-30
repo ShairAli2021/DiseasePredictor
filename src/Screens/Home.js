@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
     welcomeTextStyle:{
       fontSize: 28,
       fontWeight: 'bold',
-      color: 'green',
+      color: 'gray',
       marginVertical: 10,
       tintColor:'#006600',
       marginBottom: 20,
@@ -39,11 +39,11 @@ const styles = StyleSheet.create({
     buttonStyle: {
       alignItems: 'center',
       justifyContent: 'center',
-      marginVertical:10,
+      marginVertical:5,
       width:'35%',
-      height: 40,
-      backgroundColor: 'green',
-      borderRadius: 10,
+      height: 50,
+      backgroundColor: 'gray',
+      borderRadius: 15,
     },
     buttonTextStyle:{
       fontSize: 20,
@@ -56,7 +56,11 @@ const styles = StyleSheet.create({
       borderRadius: 10,
       borderColor: 'green',
       marginBottom:50,
-      borderColor:'green',
+      borderColor:'gray',
+      shadowColor: 'black',
+     
+      
+        elevation: 5,
     },
 })
 export default Home
